@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react'
 import Cards from './Cards'
 import NavBar from './NavBar'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
 const CardFeed = () => {
   const [allPokemons, setAllPokemons] = useState([])
   const [loadPokemon, setLoadPokemon] = useState("https://pokeapi.co/api/v2/pokemon?limit=100")
@@ -55,11 +58,11 @@ const CardFeed = () => {
         type={type}
         setType={setType}
       />
-      <div className="h-[auto]" >
+      <div className="h-[auto] flex flex-col items-center" >
         <div className="flex flex-wrap sm:justify-between px-4 sm:flex-row md:px-8 py-4 gap-8  ">
           {pokemon}
         </div>
-        <button onClick={getPokemons}> Show more</button>
+        <button onClick={getPokemons} className="bg-[#2774ba] hover:bg-[#4694dced] px-[1rem] py-[.5rem] flex gap-3 items-center text-white mb-4">Show more<FontAwesomeIcon icon={faCaretDown} /></button>
       </div>
     </>
   )
