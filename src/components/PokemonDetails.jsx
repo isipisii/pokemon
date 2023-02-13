@@ -3,7 +3,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const PokemonDetails = (props) => (
     <div 
-      className="poke-details z-10  sm:w-[600px] sm:h-[350px] h-auto w-[280px]" 
+      className="poke-details z-10 sm:w-[600px] sm:h-[370px] h-auto w-[280px] shadow-md border-black border-[2px]" 
       style={{
         position: 'fixed',
         top: '50%',
