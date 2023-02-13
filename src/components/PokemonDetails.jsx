@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const PokemonDetails = (props) => (
     <div 
@@ -8,8 +10,8 @@ const PokemonDetails = (props) => (
         left: '50%',
         transform: 'translate(-50%, -50%)'
       }}
-    > 
-        <p onClick={() => {props.setClick(false)}}>exir</p>
+    >   
+        <FontAwesomeIcon icon={faXmark} onClick={() => {props.setClick(false)}} className="text-[1.9rem] mt-2 ml-3 cursor-pointer hover:text-[#000000a2]"/>
         <h1 className="text-black font-bold text-[2rem] text-center">{props.name}</h1>
         <div className="flex sm:items-start justify-around gap-10 sm:mt-8 flex-col sm:flex-row items-center">
           <div className="w-[200px] h-[200px]">
