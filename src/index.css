@@ -6,6 +6,17 @@ body{
     background-color: #ffcc01;
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.345);
+}
+
 #fire{
     background: rgb(255,183,0);
 background: -moz-linear-gradient(5deg, rgba(255,183,0,0.9585959383753502) 0%, rgba(237,9,9,1) 100%);
